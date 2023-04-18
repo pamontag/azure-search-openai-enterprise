@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "principalId": {
+      "value": "${AZURE_PRINCIPAL_ID}"
+    },    
+    "createOpenAI":{
+      "value": false
+    },
+    "openAiServiceName": {
+      "value": "openaisearch-openai"
+    },
+    "openAiSkuName": {
+      "value": "S0"
+    },
+    "formRecognizerServiceName": {
+      "value": "openaisearch-formrecognizer"
+    },
+    "formRecognizerSkuName": {
+      "value": "S0"
+    },
+    "searchServiceName": {
+      "value": "openaisearch-search"
+    },
+    "searchServiceSkuName": {
+      "value": "standard"
+    },
+    "resourceGroupName": {
+      "value": "rg-poc-open-ai-search-enterprise"
+    },
+    "createVirtualNetwork":{
+      "value": true
+    },
+    "virtualNetworkName": {
+      "value": "openaisearch-vnet"
+    },
+    "virtualNetworkAddressPrefix": {
+      "value": "10.0.0.0/23"
+    },
+    "virtualNetworkAppSubnetName": {
+      "value": "app-subnet"
+    },
+    "virtualNetworkMiscSubnetName": {
+      "value": "misc-subnet"
+    },
+    "virtualNetworkAppSubnetAddressPrefix": {
+      "value": "10.0.0.0/25"
+    },
+    "virtualNetworkMiscSubnetAddressPrefix": {
+      "value": "10.0.0.128/25"
+    },
+    "backendServiceName": {
+      "value": "openaisearch-fe-as"
+    },
+    "functionWorkerName": {
+      "value": "openaisearch-worker-fa"
+    },
+    "storageAccountName": {
+      "value": "openaisearchdocstoragesa"
+    },
+    "appappServicePlanSKU": {
+      "value": "P1V3"
+    }
+  }
+}

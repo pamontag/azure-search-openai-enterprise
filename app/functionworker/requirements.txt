@@ -1,0 +1,7 @@
+azure-functions
+azure-core
+azure-storage-blob
+pypdf
+azure-identity
+azure-search-documents==11.4.0b3
+azure-ai-formrecognizer
