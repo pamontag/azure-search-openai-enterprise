@@ -65,7 +65,7 @@
     "storageAccountName": {
       "value": "openaisearchdocstoragesa"
     },
-    "appappServicePlanSKU": {
+    "appServicePlanSKU": {
       "value": "P1V3"
     }
   }

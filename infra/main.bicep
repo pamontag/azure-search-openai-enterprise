@@ -17,8 +17,6 @@ param virtualNetworkMiscSubnetAddressPrefix string
 param virtualNetworkAppSubnetName string = 'app'
 param virtualNetworkMiscSubnetName string = 'misc'
 
-
-param appServicePlanName string = ''
 param appServicePlanSKU string = 'P1V3'
 param backendServiceName string = ''
 param functionWorkerName string = ''
